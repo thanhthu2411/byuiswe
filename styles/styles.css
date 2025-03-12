@@ -1,0 +1,32 @@
+body {
+
+}
+
+nav {
+    text-align: right;
+}
+
+#logo {
+    border-radius: 50%;
+}
+
+/* CSS Rules for Profiles page (may move to a separate file if needed) */
+
+main {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.people {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    width: 33%;
+}
+
+.profile-photo {
+    border-radius: 50%;
+}
