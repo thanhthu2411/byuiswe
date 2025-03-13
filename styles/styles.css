@@ -30,3 +30,26 @@ main {
 .profile-photo {
     border-radius: 50%;
 }
+
+
+
+
+/****************
+Events page
+******************/
+
+.semester2025, .semester2024, .semester2023 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.achievements2025, .achievements2024, .achievements2023 {
+    border: 8px double black;
+    padding: 15px;
+}
+
+.people2025, .people2024, .people2023 {
+    border: 8px double black;
+    padding: 15px;
+}
+
