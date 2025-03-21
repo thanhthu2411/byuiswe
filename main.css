@@ -38,6 +38,12 @@ nav a {
     color: white;
     text-decoration: none;
     font-size: large;
+    padding: 10px;
+}
+
+nav a:hover {
+    background-color: white;
+    color: rgb(137, 68, 133);
 }
 
 
