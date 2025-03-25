@@ -1,0 +1,27 @@
+main {
+    text-align: center;
+    margin: 0 auto;
+    padding: 75px 0;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+section {
+    margin-bottom: 75px;
+}
+
+.people {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    width: 33%;
+}
+
+.profile-photo {
+    border-radius: 50%;
+}

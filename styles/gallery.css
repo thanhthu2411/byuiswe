@@ -1,0 +1,17 @@
+main {
+    flex-grow: 1; /* pushes footer down */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+} 
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.gallery img {
+    max-width: 100%;
+}
