@@ -19,7 +19,7 @@ section {
 
 .profile-photo {
     width: 70%;
-    border-radius: none
+    border-radius: 0
 }
 
 .card {
