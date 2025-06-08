@@ -14,7 +14,7 @@ section {
 
 .people {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(6, 1fr);
 }
 
 .profile-photo {
@@ -25,11 +25,11 @@ section {
     padding: 25px 0 ;
 }
 
-@media (max-width: 2000px) {
+/* @media (max-width: 2000px) {
   .people {
     grid-template-columns: repeat(7, 1fr);
   }
-}
+} */
 
 @media (max-width: 1600px) {
   .people {
