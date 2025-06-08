@@ -6,10 +6,16 @@
     <title>Profiles</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/profiles.css">
+    <script src="scripts/general.js" type="module"></script>
+    <script src="scripts/profiles.js" type="module"></script>
 </head>
 <body>
     <header>
         <img id="logo" src="images/SWE_Full_Master_Brand/Color/SWE_Full_Master_Brand_RGB 23.png" alt="SWE Official Logo">
+        <select id="theme">
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+        </select>
         <nav>
             <a href="index.html">Home</a>
             <a href="events.html">Past Events</a>
@@ -23,32 +29,32 @@
             <h1>Spring 2025 Leadership</h1>
             <div class="people">
                 <div class="card">
-                    <img class="profile-photo" src="images/president.jpg" alt="placeholder image">
-                    <h2>President</h2>
-                    <p>Savannah Harvey</p>
-                </div>
-                <div class="card">
-                    <img class="profile-photo" src="images/outreach.jpg" alt="placeholder image">
-                    <h2>Outreach</h2>
-                    <p>Emi Dahl</p>
-                </div>
-                <div class="card">
-                    <img class="profile-photo" src="images/secretary.jpg" alt="placeholder image">
+                    <img class="profile-photo" src="images/profiles/secretary.jpg" alt="placeholder image">
                     <h2>Secretary</h2>
                     <p>Thu Dong</p>
                 </div>
                 <div class="card">
-                    <img class="profile-photo" src="images/social media.jpg" alt="placeholder image">
+                    <img class="profile-photo" src="images/profiles/social media.jpg" alt="placeholder image">
                     <h2>Social Media</h2>
                     <p>Romina Urena</p>
                 </div>
                 <div class="card">
-                    <img class="profile-photo" src="images/treasure.jpg" alt="placeholder image">
+                    <img class="profile-photo" src="images/profiles/president.jpg" alt="placeholder image">
+                    <h2>President</h2>
+                    <p>Savannah Harvey</p>
+                </div>
+                <div class="card">
+                    <img class="profile-photo" src="images/profiles/outreach.jpg" alt="placeholder image">
+                    <h2>Outreach</h2>
+                    <p>Emi Dahl</p>
+                </div>
+                <div class="card">
+                    <img class="profile-photo" src="images/profiles/treasure.jpg" alt="placeholder image">
                     <h2>Treasurer</h2>
                     <p>Jackie Ventura</p>
                 </div>
                 <div class="card">
-                    <img class="profile-photo" src="images/board member.jpg" alt="placeholder image">
+                    <img class="profile-photo" src="images/profiles/board member.jpg" alt="placeholder image">
                     <h2>Board Member</h2>
                     <p>Tyra Tambatamba</p>
                 </div>
@@ -57,34 +63,92 @@
 
         <section id="projects">
             <h1>SWE Spring 2025's Project Teams</h1>
+            <!-- https://www.w3schools.com/howto/howto_js_curtain_menu.asp -->
             <div class="project-container">
                 <div class="project-card">
-                    <img class="project-photo" src="images/fitbit.jpg" alt="placeholder image">
-                    <h2>Fitbit</h2>
-                    <p>Embedded Systems Programming <br>
-                        Bluetooth or Wireless Communication <br>
-                        Data Collection & Analysis <br>
-                        Scripting and Compiling Languages <br>
-                        API Integration <br>
-                        Project Documentation & Collaboration</p>
+                    <div id="myNav" class="overlay">
+                        <a href="javascript:void(0)" class="closebtn">&times;</a>
+
+                        <!-- Overlay content -->
+                        <div class="overlay-content">
+                            <h3>Fitbit</h3>
+                            <p class="description">The Fitbit project focused on building a wearable health monitoring system using embedded systems programming. Students integrated Bluetooth or wireless communication modules to collect and transmit real-time data. The project required scripting in languages like C or Python, working with APIs for data analysis, and documenting progress collaboratively. By the end, participants had hands-on experience with both hardware and software aspects of IoT devices.</p>
+                            <h4>Skills</h4>
+                            <p>Embedded Systems Programming <br>
+                            Bluetooth or Wireless Communication <br>
+                            Data Collection & Analysis <br>
+                            Scripting and Compiling Languages <br>
+                            API Integration <br>
+                            Project Documentation & Collaboration</p>
+                            <h4>Members</h4>
+                            <p>
+                                Savannah Harvey<br>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <img class="project-photo" src="images/profiles/fitbit.jpg" alt="placeholder image">
+                        <h2>Fitbit</h2>
+                        <p>This project focused on building a wearable device that collects and transmits health data using embedded systems and wireless communication.</p>
+                    </div>
                 </div>
                 <div class="project-card">
-                    <img class="project-photo" src="images/swe-website.jpg" alt="placeholder image">
-                    <h2>SWE Website</h2>
-                    <p>HTML/CSS - Structuring and styling responsive web pages <br>
-                        JavaScript – Adding interactivity and dynamic behavior<br>
-                        DOM Manipulation – Updating content and handling user events
-</p>
+                    <div id="myNav" class="overlay">
+                        <a href="javascript:void(0)" class="closebtn">&times;</a>
+
+                        <!-- Overlay content -->
+                        <div class="overlay-content">
+                            <h3>SWE Website</h3>
+                            <p class="description">This project involved designing and developing the official website for the SWE society using HTML, CSS, and JavaScript. Students created responsive layouts, styled content for readability, and added interactive features using DOM manipulation. The project helped members enhance their frontend web development skills while working in teams to build a user-friendly platform that showcases events, projects, and team profiles.p>
+                            <h4>Skills</h4>
+                            <p>HTML/CSS - Structuring and styling responsive web pages <br>
+                                JavaScript – Adding interactivity and dynamic behavior<br>
+                                DOM Manipulation – Updating content and handling user events
+                            </p>
+                            <h4>Members</h4>
+                            <p>
+                                Tyra Kasapo<br>
+                                Thu Dong<br>
+                                Romina Urena<br>
+                                Natalie Powell<br>
+                                Tatiana Tyler
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <img class="project-photo" src="images/profiles/swe-website.jpg" alt="placeholder image">
+                        <h2>SWE Website</h2>
+                        <p>The SWE Website project aimed to create a dynamic and responsive site to represent the society online.</p>
+                    </div> 
                 </div>
                 <div class="project-card">
-                    <img class="project-photo" src="images/plant.jpg" alt="placeholder image">
-                    <h2>3D Plant Pot</h2>
-                    <p>Arduino programming <br>
-                        Sensor integration <br>
-                        3D modeling & printing <br>
-                        Product design & prototyping <br>
-                        Embedded system development <br>
-                        Sustainable tech integration</p>
+                    <div id="myNav" class="overlay">
+                        <a href="javascript:void(0)" class="closebtn">&times;</a>
+
+                        <!-- Overlay content -->
+                        <div class="overlay-content">
+                            <h3>3D Plant Pot</h3>
+                            <p class="description">The 3D Plant Pot project combined technology and sustainability. Students programmed Arduino microcontrollers to read data from sensors monitoring soil moisture and light levels. They designed custom pot enclosures using 3D modeling software and printed them using campus resources. This project encouraged creative thinking in product design, embedded development, and environmentally conscious tech solutions.</p>
+                            <h4>Skills</h4>
+                            <p>Arduino programming <br>
+                            Sensor integration <br>
+                            3D modeling & printing <br>
+                            Product design & prototyping <br>
+                            Embedded system development <br>
+                            Sustainable tech integration</p>
+                            <h4>Members</h4>
+                            <p>
+                                Emi Dahl<br>
+                                Jackeline Ventura<br>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <img class="project-photo" src="images/profiles/plant.jpg" alt="placeholder image">
+                        <h2>3D Plant Pot</h2>
+                        <p>In this project, students designed a smart plant pot that monitors environmental conditions using Arduino and sensors.</p>
+                    </div>
                 </div>
             </div>
         </section>
