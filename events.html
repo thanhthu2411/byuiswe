@@ -5,11 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/events.css">
+    <script src="scripts/general.js" type="module"></script>
+    <script src="scripts/events.js" type="module"></script>
     <title>Events</title>
 </head>
 <body>
     <header>
         <img id="logo" src="images/SWE_Full_Master_Brand/Color/SWE_Full_Master_Brand_RGB 23.png" alt="SWE Official Logo">
+        <select id="theme">
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+        </select>
         <nav>
             <a href="index.html">Home</a>
             <a href="events.html">Past Events</a>
@@ -18,68 +24,126 @@
         </nav>
     </header>
     <main>
-        <h1>SWE Events and Achievements</h1>
-        <h2>Year 2025</h2>
-        <div class="semester2025">
-            <div class="achievements2025">
-                <h3>2025 Achievements</h3>
-                <ul>
-                    <li>Worked on several projects, including Fitbit, SWE website, and 3D Plant Pot</li>
-                </ul>
-            </div>
-            <div class="pictures2025">
-                <img src="images/project2025.jpg" alt="Project Night at SWE">
-                <img src="images/project2025(2).jpg" alt="Project Night at SWE">
-                <p>SWE members gather to work on their projects!</p>
-            </div>
-            <div class="people2025">
-                <h3>2025 Members</h3>
-                <ul>
-                    <li>Emily McGovern</li>
-                    <li>Savannah</li>
-                    <li>Tyra Kasapo</li>
-                    <li>Romina Urena</li>
-                    <li>Thu Dong</li>
-                    <li>Emi</li>
-                    <li>Natalie Powell</li>
-                    <li>Tatiana Tyler</li>
-                    <li>Emma Bloomfield</li>
-                    <li>Giselle Sanchez</li>
-                    <li>Elijah Larson</li>
-                    <li>Emma Kohler</li>
-                    <li>Jackeline Ventura</li>
-                    <li>Brandon Vang</li>
-                    <li>Cassandra Naife</li>
-                </ul>
+        <div class="events-intro">
+            <h1>Celebrating Our History: A Look Back at SWE Events</h1>
+            <p>Explore the milestones and impactful events that have shaped our SWE chapter over the years. From professional development workshops to community outreach, discover the legacy of our collective efforts.</p>
+        </div>
+
+        <div class="events-summary">
+            <div class="timeline">
+                <a href="#event1" class="event-link">
+                    <div class="timeline-item">
+                        <div class="circle"></div>
+                        <div class="time">Spring 2025</div>
+                        <p class="event-content">Fitbit, SWE website, 3D plant pot</p>
+                    </div>
+                </a>
+                <a href="#event2" class="event-link">
+                    <div class="timeline-item">
+                        <div class="circle"></div>
+                        <div class="time">Winter 2025</div>
+                        <p class="event-content">SWE website</p>
+                    </div>
+                </a>
+                <a href="#event3" class="event-link">
+                    <div class="timeline-item">
+                        <div class="circle"></div>
+                        <div class="time">Fall 2024</div>
+                        <p class="event-content">Mood Tracker app</p>
+                    </div>
+                </a>
             </div>
         </div>
- 
-        <h2>Year 2024</h2>
-        <div  class="semester2024">
-            <div class="achievements2024">
-                <h3>2024 Achievements</h3>
-                <ul>
-                    <li>Create Mood Tracker app to help users monitor and reflect on their emotional well-being!</li>
-                </ul>
+
+        <div class="events-detail">
+            <div class="detail-container">
+                <div class="spring2025" id="event1">
+                    <h3>Spring 2025</h3>
+                    <p>Worked on several projects, including Fitbit, SWE website, and 3D Plant Pot</p>
+                    <div class="pictures2025">
+                        <img src="images/project2025.jpg" alt="Project Night at SWE">
+                        <img src="images/project2025(2).jpg" alt="Project Night at SWE">
+                        <p>SWE members gather to work on their projects!</p>
+                    </div>
+                    <div class="people2025">
+                        <button class="accordion">Spring 2025 Members</button>
+                        <div class="panel">
+                            <ul>
+                                <li>Emily McGovern</li>
+                                <li>Savannah</li>
+                                <li>Tyra Kasapo</li>
+                                <li>Romina Urena</li>
+                                <li>Thu Dong</li>
+                                <li>Emi</li>
+                                <li>Natalie Powell</li>
+                                <li>Tatiana Tyler</li>
+                                <li>Emma Bloomfield</li>
+                                <li>Giselle Sanchez</li>
+                                <li>Elijah Larson</li>
+                                <li>Emma Kohler</li>
+                                <li>Jackeline Ventura</li>
+                                <li>Brandon Vang</li>
+                                <li>Cassandra Naife</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="pictures2024">
-                <img src="images/IMG_4623.jpg" alt="Project Night at SWE">
-                <p>SWE members gather for a project night to create this app!</p>
+
+            <div class="detail-container">
+                <div class="winter2025" id="event2">
+                    <h3>Winter 2025</h3>
+                    <p>Created SWE website</p>
+                    <div class="pictures2025">
+                        <img src="images/awards_night1.jpg" alt="Project Night at SWE">
+                        <p>SWE members gather to create the website!</p>
+                    </div>
+                    <div class="people2025">
+                        <button class="accordion">Winter 2025 Members</button>
+                        <div class="panel">
+                            <ul>
+                                <li>Emily McGovern</li>
+                                <li>Savannah</li>
+                                <li>Elisa</li>
+                                <li>David Schaad</li>
+                                <li>Thu Dong</li>
+                                <li>Emi</li>
+                                <li>Angelina</li>
+                                <li>Jackeline Ventura</li>
+                                <li>Elisa Barranca</li>
+                                <li>Sophie Archibald</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="people2024">
-                <h3>2024 Members</h3>
-                <ul>
-                    <li>Emily McGovern</li>
-                    <li>Savannah</li>
-                    <li>Elisa</li>
-                    <li>David Schaad</li>
-                    <li>Thu Dong</li>
-                    <li>Emi</li>
-                    <li>Angelina</li>
-                    <li>Jackeline Ventura</li>
-                    <li>Elisa Barranca</li>
-                    <li>Sophie Archibald</li>
-                </ul>
+
+            <div class="detail-container">
+                <div class="fall2024" id="event3">
+                    <h3>Fall 2024</h3>
+                    <p>Created Mood Tracker app</p>
+                    <div class="pictures2025">
+                        <img src="images/IMG_4623.jpg" alt="Project Night at SWE">
+                        <p>SWE members gather to create the app!</p>
+                    </div>
+                    <div class="people2025">
+                        <button class="accordion">Fall 2024 Members</button>
+                        <div class="panel">
+                            <ul>
+                                <li>Emily McGovern</li>
+                                <li>Savannah</li>
+                                <li>Elisa</li>
+                                <li>David Schaad</li>
+                                <li>Thu Dong</li>
+                                <li>Emi</li>
+                                <li>Angelina</li>
+                                <li>Jackeline Ventura</li>
+                                <li>Elisa Barranca</li>
+                                <li>Sophie Archibald</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
