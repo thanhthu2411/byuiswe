@@ -8,11 +8,18 @@
     <title>SWE Gallery</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/gallery.css">
+    <script src="scripts/general.js" type="module"></script>
+    <script src="scripts/gallery.js" type="module"></script>
+
 </head>
 <body>
     <div id="content"></div>
     <header>
         <img id="logo" src="images/SWE_Full_Master_Brand/Color/SWE_Full_Master_Brand_RGB 23.png" alt="SWE Official Logo">
+        <select id="theme">
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+        </select>
         <nav>
             <a href="index.html">Home</a>
             <a href="events.html">Past Events</a>
@@ -22,24 +29,46 @@
     </header>
 
     <main>
-        <section class="gallery">
-            <h1>Our SWE Club Moments</h1>
-            <h2>Empowering Women</h2>
-        </section>
-        <section class="gallery">
-            <figure>
-                <img src="images/engineers_week.jpg" alt="picture">
-            </figure>
-            <figure>
-                <img src="images/swe_beach.jpg" alt="picture">
-            </figure>
-            <figure>
-                <img src="images/swe_convention2.jpg" alt="picture">
-            </figure>
-            <figure>
-                <img src="images/awards_night4.jpg" alt="picture">
-            </figure>
-        </section>
+        <div class="intro-container">
+            <h1>Our Visual Journey</h1>
+            <p>Welcome to the SWE Gallery, a visual celebration of our vibrant community and impactful events! Here, you'll find snapshots capturing the spirit of our innovation, collaboration, and dedication to empowering women in engineering.</p>
+            <div class="scoll-container">
+                <img src="images/byuistudents.png" alt="swe gallery" class="scoll-img" width="600" height="400">
+                <img src="images/award_night_team.jpeg" alt="swe gallery" class="scoll-img" width="600" height="400">
+                <img src="images/project2025.jpg" alt="swe gallery" class="scoll-img" width="600" height="400">
+                <img src="images/engineers_week.jpg" alt="swe gallery" class="scoll-img" width="600" height="400">
+                <img src="images/awards_night2.jpg" alt="swe gallery" class="scoll-img" width="600" height="400">
+
+                <div class="scoll-text">SWE</div>
+            </div>
+        </div>
+
+        <div class="gallery-details">
+            <h2>Dive in and explore the moments that define our journey.</h2>
+            <div class="row">
+                <div class="column">
+                    <img src="images/profiles.jpg" alt="Project Night">
+                </div>
+                <div class="column">
+                    <img src="images/project2025.jpg" alt="3D Plant Pot Team">
+                </div>
+                <div class="column">
+                    <img src="images/engineers_week.jpg" alt="Engineers Week">
+                </div>
+                <div class="column">
+                    <img src="images/award_night_team.jpeg" alt="Award Night">
+                </div>
+                <div class="column">
+                    <img src="images/swe_beach.jpg" alt="SWE Trip">
+                </div>
+            </div>
+
+            <div class="img-container">
+                <span class="close-btn">&times;</span>
+                <img id="expandedImg" style="width:100%">
+                <div id="imgtext"></div>
+            </div>
+        </div>
     </main>
 
     <footer>
