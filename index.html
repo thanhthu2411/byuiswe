@@ -6,10 +6,15 @@
     <title>BYU-Idaho SWE</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/general.js" type="module"></script>
 </head>
 <body>
     <header>
         <img id="logo" src="images/SWE_Full_Master_Brand/Color/SWE_Full_Master_Brand_RGB 23.png" alt="SWE Official Logo">
+        <select id="theme">
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+        </select>
         <nav>
             <a href="index.html">Home</a>
             <a href="events.html">Past Events</a>
@@ -20,7 +25,19 @@
 
     <main>
         <div class="welcome-container">
-            <img class="welcome-img" src="images/byuistudents.png" alt="Pictures of SWE students">
+            <div class="slideshow-container">
+                <div class="mySlides">
+                    <img class="welcome-img" src="images/byuistudents.png" alt="Pictures of SWE students">
+                </div>
+                <div class="mySlides">
+                    <img class="welcome-img" src="images/main-slideshow.jpg" alt="Pictures of SWE students">
+                </div>
+                <div class="mySlides">
+                    <img class="welcome-img" src="images/swe_beach.jpg" alt="Pictures of SWE students">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+            </div>
             <div class="welcome-msg">
                 <h1>WELCOME TO SWE AT BYU-IDAHO</h1>
                 <p>Empowering, inspiring, and supporting women in engineering and technology. At SWE BYU-Idaho, we are a community dedicated to helping women succeed in STEM through mentorship, professional development, and networking opportunities. Whether you’re a student exploring engineering, a seasoned professional, or an ally, we invite you to join us in building a future of innovation and inclusivity.</p>
@@ -38,19 +55,33 @@
                 <div class="gallery-content">
                     <img class="content-img" src="images/profiles.jpg" alt="gallery photos">
                     <h3>PROFILES</h3>
-                    <p>Meet the incredible members of SWE BYU-Idaho! Our <a href="profiles.html">Profiles</a> section highlights the inspiring students and professionals who are making a difference in STEM.</p>
+                    <p>Meet the incredible members of SWE BYU-Idaho! Our <a class="content-links" href="profiles.html">Profiles</a> section highlights the inspiring students and professionals who are making a difference in STEM.</p>
                 </div>
                 <div class="gallery-content">
                     <img class="content-img" src="images/past-events.jpg" alt="gallery photos">
                     <h3>PAST EVENTS</h3>
-                    <p>Take a look at our <a href="events.html">Past Events</a> to see the impact of SWE at BYU-Idaho. From hands-on workshops to industry networking, our events help members grow, connect, and succeed.</p>
+                    <p>Take a look at our <a class="content-links" href="events.html">Past Events</a> to see the impact of SWE at BYU-Idaho. From hands-on workshops to industry networking, our events help members grow, connect, and succeed.</p>
                 </div>
             </div>
         </div>
         <div class="events-container">
             <h2>Spring 2025 Semester’s Events</h2>
             <p class="events-detail">The Society of Women Engineers (SWE) has a fun and inspiring lineup of events this semester! Whether you're looking to build hands-on projects, make new friends, or just take a break and have some fun, there’s something for everyone. Join us every Wednesday at 5:30 PM in STC Room 341 to connect, learn, and grow together.</p>
-            <img class="events-img" src="images/Calendar SWE Spring 2025.png" alt="SWE flyeer">
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <img class="events-img" src="images/main/Calendar SWE Spring 2025.png" alt="SWE flyeer">
+                    </div>
+                    <div class="flip-box-back">
+                        <div class="flip-box-text">
+                            <h2>The Society of Women Engineers (SWE) </h2>
+                            <p>Time: Wednesdays at 5:30pm</p>
+                            <p>Location: STC room 341</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- https://www.w3schools.com/howto/howto_css_flip_box.asp -->
         </div>
     </main>
 
@@ -73,5 +104,7 @@
             </a>
         </div>
     </footer>
+    <script src="scripts/main.js"></script>
+
 </body>
 </html>
