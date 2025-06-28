@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --swe-purple: #5a5377;
+    --swe-gold: #DBC554;
+    --swe-gray: #A9A8A9;
+}
+
+body {
+    margin: 0;
+    color: var(--swe-purple);
+    font-family: 'Open Sans';
+    background-color: #f6f3e8;
+}
+
+nav {
+    /* text-align: right; */
+    background-color: var(--swe-gold);
+    border: 2px solid #d5be4a;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    box-shadow: 0px 5px 4px 2px var(--swe-gray);
+}
+
+nav a {
+    padding: 25px 40px;
+    color: var(--swe-purple);
+    text-decoration: none;
+    font-size: 1.3em;
+}
+
+nav a:hover {
+    background-color: var(--swe-purple);
+    color: white;
+    box-shadow: 3px 3px 3px 1px gray;
+    /* margin: 100%; */
+}
+
+#logo {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+main {
+    text-align: center;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+footer {
+    background-color: rgba(250, 250, 250, 0.684);
+    background: #d7c9ef;
+    border: 2px solid #c7b3e8;
+    border-radius: 5px;
+    padding: 40px 20px;
+    color: #fff;
+    border-top: none; 
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; /* columns */
+    gap: 20px; 
+    padding: 2% 5% 1%;
+    box-shadow: -1px -3px 1px 3px var(--swe-gray);
+}
+
+footer a {
+    color: #57438e;
+    text-decoration: none;
+}
+
+.footer-logo {
+    text-align: left;
+    color: #222;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.footer-links p {
+    margin: 10px 0;
+}
+
+.footer-links a {
+    color: #222;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer-social a {
+    margin-left: 15px;
+}
+
+.footer-social img {
+    width: 30px;
+    height: 30px;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }}
+
+  i {
+    padding: 8px;
+  }
