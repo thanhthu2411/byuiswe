@@ -63,6 +63,13 @@ h3, p {
     width: 100%;
 }
 
+.content-links {
+    text-decoration: none;
+}
+
+.content-links:hover {
+    text-decoration: underline;
+}
 
 /* image slideshow  */
 .slideshow-container {
