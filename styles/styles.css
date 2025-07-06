@@ -89,6 +89,10 @@ footer a {
     font-size: 1rem;
 }
 
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
 .footer-social {
     display: flex;
     justify-content: flex-end;
@@ -119,4 +123,11 @@ footer a {
     }
 }
 
-/* image slideshow  */
+/* scroll to top button */
+
+.topBtn {
+    position: fixed;
+    right: 20px;
+    bottom: 300px;
+    font-size: 20px;
+}
