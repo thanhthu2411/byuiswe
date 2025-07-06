@@ -80,9 +80,28 @@ img {
     width: 500px;
 }
 
-.panel {
-    display: none;
+#video {
+    /* transform: rotate(90deg); */
+     width: 500px;
+     margin-top: 20px;
+
 }
+
+.panel {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 2s ease, visibility 2s ease;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.panel.show {
+    opacity: 1;
+    visibility: visible;
+    max-height: 300px;
+
+}
+
 
 .accordion {
     background-color: #eee;
@@ -95,6 +114,7 @@ img {
     outline: none;
     font-size: 15px;
     transition: 0.4s;
+    border-radius: 5px;
 }
 
 .semester2025, .semester2024 {
