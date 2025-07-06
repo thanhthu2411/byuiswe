@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="styles/events.css">
     <script src="scripts/general.js" type="module"></script>
     <script src="scripts/events.js" type="module"></script>
+    <script src="https://kit.fontawesome.com/9821f74f33.js" crossorigin="anonymous"></script>
+
     <title>Events</title>
 </head>
 <body>
@@ -17,10 +19,10 @@
             <option value="dark">Dark</option>
         </select>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="events.html">Past Events</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="profiles.html">Profiles</a>
+            <a href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+            <a href="events.html"><i class="fa-solid fa-calendar-days"></i>Past Events</a>
+            <a href="gallery.html"><i class="fa-solid fa-camera"></i>Gallery</a>
+            <a href="profiles.html"><i class="fa-solid fa-address-card"></i></i>Profiles</a>
         </nav>
     </header>
     <main>
@@ -63,6 +65,10 @@
                     <div class="pictures2025">
                         <img src="images/project2025.jpg" alt="Project Night at SWE">
                         <img src="images/project2025(2).jpg" alt="Project Night at SWE">
+                        <video id="video" controls>
+                            <source src="images/justdance.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
                         <p>SWE members gather to work on their projects!</p>
                     </div>
                     <div class="people2025">
@@ -146,6 +152,7 @@
                 </div>
             </div>
         </div>
+        <button class="topBtn">↑</button>
 
     </main>
     <footer>
