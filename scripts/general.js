@@ -31,3 +31,24 @@ function themeChange() {
 }
 
 themeElement.addEventListener("change", themeChange);
+
+
+// top button
+
+window.onscroll = function () {
+    document.querySelectorAll(".topBtn").forEach(btn => {
+        if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+            btn.style.display = "block";
+        } else {
+            btn.style.display = "none";
+        }
+    })
+}
+
+
+document.querySelectorAll(".topBtn").forEach(btn => {
+    btn.onclick = () => {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+})
